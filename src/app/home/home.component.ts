@@ -11,7 +11,7 @@ export class HomeComponent {
   protocolName = 'فودافون مصر';
   phoneNumber = '012345678910';
   country = 'المملكة الأردنية الهاشمية';
-  countryFlag = '../../assets/vecteezy_jordan-flat-rounded-flag-with-transparent-background_16328892.png';
+  countryFlag = '../../assets/imgs/flag.png';
   balance = 5000;
   currentClient = 'الشركة الألمانية للإبادة';
   head1='تاريخ الشحنه';
@@ -29,7 +29,7 @@ time = '04:00' + ' م';
 tableData = [
   {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '../../assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -39,7 +39,7 @@ tableData = [
   },
   {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
