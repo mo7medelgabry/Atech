@@ -1,0 +1,192 @@
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-hashtag p-2"></i>{{numberdisplay}}</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" aria-current="page"><i class="fa-solid fa-xmark p-2"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3 one">
+  <div class="d-flex justify-content-between">
+    <div class="mt-2">
+      <span class="num">012345678910</span>
+      <button class="butt btn mx-2">قيد الاستخدام</button>
+    </div>
+    <div>
+      <button mat-button [matMenuTriggerFor]="menu" class="men"> <i class="fa-solid fa-ellipsis dots"></i>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>تعديل الرقم <i class="fa-solid fa-pen"></i> </button>
+        <button mat-menu-item class="text-danger">الغاء التعيين <i class="fa-solid fa-link-slash "></i></button>
+      </mat-menu>
+
+    </div>
+  </div>
+ 
+  <div class="container">
+    <div class=" mt-5 m-auto d-flex justify-content-between">
+      <div class="slash">
+        <h3>اسم البروتوكول</h3>
+        <p>فودافون مصر</p>
+  
+      </div>  
+      <div class="line"></div>
+  
+      <div class="slash">
+        <h3>الدولة</h3>
+        <p><img [src]="countryFlag"> المملكه الاردنيه الهاشميه</p>
+      </div>
+      <div class="line"></div>
+  
+      <div class="slash">
+        <h3>العميل الحالي</h3>
+        <p mat-raised-button class="txt" matTooltip="الشركة الألمانية للإبادة"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+          الشركة الألمانية للإبادة
+        </p>
+  
+      </div>
+      <div class="line"></div>
+  
+      <div class="slash">
+        <h3>عدد الامدادات</h3>
+        <p>09</p>
+      </div>
+    </div>
+  
+  </div>
+ 
+  <div class="container">
+    <div class=" m-auto d-flex justify-content-between">
+      <div class="slash">
+        <h3>{{head1}}</h3>
+        <p>2024/12/29</p>
+      </div>
+      <div class="line"></div>
+  
+      <div class="slash">
+        <h3>{{head2}}</h3>
+        <p>5000 {{currency}}</p>
+      </div>
+      <div class="line"></div>
+  
+      <div class="slash">
+        <h3>{{head3}}</h3>
+        <p>5000 {{currency}}</p>
+      </div>
+      <div class="line"></div>
+  
+      <div class="slash">
+        <h3>{{head4}}</h3>
+        <p>5000 {{currency}}</p>
+      </div>
+    </div>
+  
+  </div>
+  
+
+</div>
+
+
+<div class="container mt-3">
+  <div class="row" id="tabl">
+    <ul>
+      <li class="list-group-item mt-4">
+        <div class="row d-flex justify-content-between" id="table-header">
+          <div class="col-2"><strong>العميل</strong></div>
+          <div class="col-2"><strong>تاريخ التعيين</strong></div>
+          <div class="col-2"><strong>تاريخ الإلغاء التعيين</strong></div>
+          <div class="col-2"><strong>المسؤول عن التعيين</strong></div>
+          <div class="col-1"><strong>الدقائق المحلية</strong></div>
+          <div class="col-1"><strong>الدقائق الدولية</strong></div>
+          <div class="col-1"><strong>المبلغ</strong></div>
+        </div>
+      </li>
+
+      <li class="list-group-item"
+        *ngFor="let row of tableData | paginate: { itemsPerPage: itemsPerPage, currentPage: page }">
+        <div class="row d-flex justify-content-between" id="table-body">
+          <div class="col-2 ellas">
+            <img [src]="row.clientLogo" alt="Client Logo" class="client-logo">
+            {{ row.client }}
+          </div>
+          <div id="date" class="col-2">{{ row.assignDate }}</div>
+          <div id="date" class="col-2">{{ row.cancelDate || '-' }}</div>
+          <div id="name" class="col-2">{{ row.assignee }}</div>
+          <div id="date" class="col-1">{{ row.localMinutes }}</div>
+          <div id="date" class="col-1">{{ row.internationalMinutes }}</div>
+          <div class="col-1">{{ row.amount }} ج.م</div>
+        </div>
+      </li>
+    </ul>
+    <div class="selected d-flex justify-content-between align-items-center">
+      <div class="allinout d-flex justify-content-center align-items-center">
+        <h4>عرض</h4>
+        <select id="itemsPerPage" [(ngModel)]="itemsPerPage" (change)="onItemsPerPageChange()">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select> 
+        <h4>من اصل 55</h4>
+        
+      </div>
+      <div class="Paginator">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item" [class.disabled]="page === totalPages">
+              <a class="page-link" (click)="goToPage(page + 1)" ><</a>
+            </li>
+      
+            <li *ngFor="let pageNum of pagesArray" class="page-item" [class.active]="pageNum === page">
+              <a class="page-link" (click)="goToPage(pageNum)">{{ pageNum }}</a>
+            </li>
+      
+            <li class="page-item" [class.disabled]="page === 1">
+              <a class="page-link" (click)="goToPage(page - 1)" > > </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<footer class="mt-3">
+  <div class="container" id="footer">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="left d-flex align-items-center">
+        <img [src]="img" alt="Hero Image">
+        <div class="text">
+          <ul>
+            <li>
+              <h2>{{craatename}}</h2>
+            </li>
+            <li>
+              <h3>{{name}}</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="right">
+        <ul>
+          <li>
+            <h2>{{dateofcreation}}</h2>
+          </li>
+          <li class="d-flex align-items-center">{{date}} <p></p> {{time}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
