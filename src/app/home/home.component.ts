@@ -11,7 +11,7 @@ export class HomeComponent {
   protocolName = 'فودافون مصر';
   phoneNumber = '012345678910';
   country = 'المملكة الأردنية الهاشمية';
-  countryFlag = '../../assets/imgs/flag.png';
+  countryFlag = '/assets/imgs/flag.png';
   balance = 5000;
   currentClient = 'الشركة الألمانية للإبادة';
   head1='تاريخ الشحنه';
@@ -21,7 +21,7 @@ export class HomeComponent {
   currency='ج.م' ;
   craatename = 'تم الأنشاء بواسطة';
 name = 'عبدالرحيم إسماعيل ناصف';
-img = '/assets/1.png';
+img = '/assets/imgs/1.png';
 dateofcreation = 'تاريخ الإنشاء';
 date = '02/02/2025';
 time = '04:00' + ' م'; 
@@ -29,7 +29,7 @@ time = '04:00' + ' م';
 tableData = [
   {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/imgs/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -49,7 +49,7 @@ tableData = [
   },
   {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -59,7 +59,7 @@ tableData = [
   },
   {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -68,7 +68,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -77,7 +77,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -86,7 +86,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -95,7 +95,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -104,7 +104,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -113,7 +113,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -122,7 +122,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -131,7 +131,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -140,7 +140,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -149,7 +149,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -158,7 +158,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -167,7 +167,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -176,7 +176,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -185,7 +185,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -194,7 +194,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -203,7 +203,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -212,7 +212,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
@@ -221,7 +221,7 @@ tableData = [
     amount: 61890
   }, {
     client: 'الشركة الألمانية للإبادة ',
-    clientLogo: '../../assets/company.png',
+    clientLogo: '/assets/imgs/company.png',
     assignDate: '01/12/2024',
     cancelDate: '01/12/2024',
     assignee: 'عبدالرحيم إسماعيل ناصف',
